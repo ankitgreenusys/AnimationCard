@@ -1,3 +1,11 @@
+.manybox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
 .fullbox {
   display: flex;
   flex-direction: column;
