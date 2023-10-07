@@ -1,0 +1,89 @@
+.mycard {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mycard .imgdiv {
+  width: 100%;
+  height: 100%;
+}
+
+.mycard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mycard-body {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  position: absolute;
+  /* bottom: -55px;
+  width: 80%;   */
+}
+
+.mycard:hover .mycard-body {
+  bottom: -55px;
+  width: 80%;
+  animation: slide-top1 0.3s both;
+}
+
+.mycard .mycard-body:hover {
+  bottom: 0px;
+  width: 80%;
+  animation: slide-top2 0.3s both;
+}
+
+.deflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mycard-text .add {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.mycard-text .sizes {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mycard-text .sizes span {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.mycard-text .sizes span:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+@keyframes slide-top1 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: -55px;
+  }
+}
+
+@keyframes slide-top2 {
+  0% {
+    bottom: -55px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
